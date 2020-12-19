@@ -12,35 +12,35 @@ import UIKit
 public class RoundedRegularPolygonView: UIView {
 
 	@objc @IBInspectable
-	var color: UIColor = .red {
+	public var color: UIColor = .red {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 	
 	@objc @IBInspectable
-	var rotation: CGFloat = 0.0 {
+	public var rotation: CGFloat = 0.0 {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 	
 	@objc @IBInspectable
-	var cornerRadius: CGFloat = 0.0 {
+	public var cornerRadius: CGFloat = 0.0 {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 	
 	@objc @IBInspectable
-	var scale: CGPoint = CGPoint(x: 1, y: 1) {
+	public var scale: CGPoint = CGPoint(x: 1, y: 1) {
 		didSet {
 			self.setNeedsDisplay()
 		}
 	}
 	
 	@objc @IBInspectable
-	var sides: Int = 6 {
+	public var sides: Int = 6 {
 		didSet {
 			self.setNeedsDisplay()
 		}
